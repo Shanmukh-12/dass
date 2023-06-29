@@ -5,7 +5,7 @@
     <Properties>
     
         <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n</Property>
-        <Property name="basePath">${sys:catalina.home}/logs/hospital-logs</Property>
+        <Property name="basePath">D:/logs/hospital-logs</Property>
     </Properties>
  
     <Appenders>

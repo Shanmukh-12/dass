@@ -134,7 +134,6 @@ public class DoctorTemp {
 	}
 
 	public DoctorTemp() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public DoctorSchedule getSchedule() {
@@ -149,6 +148,4 @@ public class DoctorTemp {
 		this.doctId = doctId;
 	}
 
-	// Constructor, getters, and setters
-	// ...
 }

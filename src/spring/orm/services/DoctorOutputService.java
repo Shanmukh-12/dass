@@ -1,5 +1,7 @@
 package spring.orm.services;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -42,8 +44,7 @@ public class DoctorOutputService {
 	private AppointmentDAO appdao;
 
 	/*
-	 * Retrieve a list of doctors with their schedules based on specialization and
-	 * appointment date
+	 * Retrieve a list of doctors with their schedules based on specialization and appointment date
 	 */
 	public List<DoctorList> getAllDocBySpecDate(String specialization, Date appointmentDated) {
 		List<DoctorList> docspec = new ArrayList<>();
@@ -98,7 +99,7 @@ public class DoctorOutputService {
 	}
 
 	// Add a new doctor with the provided information
-	public int addDoc(DoctorInput d, CommonsMultipartFile pic) {
+	public int addDoc(DoctorInput d, CommonsMultipartFile pic) throws FileNotFoundException {
 		DoctorTemp dt = new DoctorTemp();
 		Specialization s = specdao.getSpecialization(d.getDocspec());
 		dt.setDoctCfee(d.getDocfee());
@@ -114,10 +115,10 @@ public class DoctorOutputService {
 
 	@Transactional
 	// Update doctor information based on the provided data
-	public int updateDoctor(DoctorUpdateModel d, CommonsMultipartFile docphoto) {
+	public int updateDoctor(DoctorUpdateModel d, CommonsMultipartFile docphoto) throws IOException {
 		DoctorTemp dt = doctdao.getDoctor(d.getDoc_id());
-		
-		//user may update a single field so we tried to check each conditions to update
+
+		// user may update a single field so we tried to check each conditions to update
 		if (d.getDocspec() != null) {
 			Specialization s = specdao.getSpecialization(d.getDocspec());
 			dt.setSpecialization(s);

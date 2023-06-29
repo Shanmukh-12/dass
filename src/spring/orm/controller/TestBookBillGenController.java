@@ -29,7 +29,7 @@ import spring.orm.model.input.BillInputModel;
 import spring.orm.model.output.patientsoutputmodel;
 import spring.orm.model.output.testsCategoriesModel;
 import spring.orm.services.TestServices;
-import spring.orm.util.MailSend;
+import spring.orm.util.MailSendHelper;
 
 @Controller
 public class TestBookBillGenController {
@@ -139,7 +139,9 @@ public class TestBookBillGenController {
 			@RequestParam String email, @RequestParam String content) {
 
 		try {
-			MailSend.sendEmailTestBooking(request, response, email, content);
+			// MailSend.sendEmailTestBooking(request, response, email, content);
+			MailSendHelper.sendEmailTestBooking(request, response, email, content);
+
 		} catch (Exception e) {
 			// Catches any exception that occurs during the email sending process and prints the stack trace.
 			// MessagingException

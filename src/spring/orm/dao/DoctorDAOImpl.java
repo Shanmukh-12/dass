@@ -2,7 +2,6 @@ package spring.orm.dao;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.LogManager;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -65,59 +64,93 @@ public class DoctorDAOImpl implements DoctorsDAO {
 	@Transactional
 	public List<DoctorTemp> getAllDocSpec(String Spec) {
 		/*
-		 * This method retrieves all doctors with a specific specialization from the
-		 * database.
+		 * This method retrieves all doctors with a specific specialization from the database.
 		 */
-		return em.createQuery("select d from Doctor d where d.specialization.id=: spec", DoctorTemp.class)
-				.setParameter("spec", Spec).getResultList();
-
+		try {
+			List<DoctorTemp> doctors = em
+					.createQuery("select d from Doctor d where d.specialization.id=:spec", DoctorTemp.class)
+					.setParameter("spec", Spec).getResultList();
+			logger.info("Retrieved {} doctors with specialization: {}", doctors.size(), Spec);
+			return doctors;
+		} catch (Exception e) {
+			logger.error("Failed to retrieve doctors with specialization: {}", Spec, e);
+			throw e; // Rethrow the exception to be handled by the global exception handler
+		}
 	}
 
 	@Transactional
 	public DoctorTemp getDoctor(int Id) {
 		/*
-		 * This method retrieves a specific doctor based on the provided ID from the
-		 * database.
+		 * This method retrieves a specific doctor based on the provided ID from the database.
 		 */
-		return em.createQuery("select d from DoctorTemp d where d.doctId=:doct ", DoctorTemp.class)
-				.setParameter("doct", Id).getSingleResult();
+		try {
+			DoctorTemp doctor = em.createQuery("select d from DoctorTemp d where d.doctId=:doct", DoctorTemp.class)
+					.setParameter("doct", Id).getSingleResult();
+			logger.info("Retrieved doctor with ID: {}", Id);
+			return doctor;
+		} catch (Exception e) {
+			logger.error("Failed to retrieve doctor with ID: {}", Id, e);
+			throw e; // Rethrow the exception to be handled by the global exception handler
+		}
 	}
 
 	@Transactional
 	@Override
 	public void saveDoc(DoctorTemp s) {
-		em.persist(s);
+		try {
+			em.persist(s);
+			logger.info("Saved doctor: {}", s);
+		} catch (Exception e) {
+			logger.error("Failed to save doctor: {}", s, e);
+			throw e; // Rethrow the exception to be handled by the global exception handler
+		}
 	}
 
 	@Transactional
 	@Override
 	public void updatedoc(DoctorTemp s) {
-		em.merge(s);
-
+		try {
+			em.merge(s);
+			logger.info("Updated doctor: {}", s.getDoctId());
+		} catch (Exception e) {
+			logger.error("Failed to update doctor: {}", s.getDoctId(), e);
+			throw e; // Rethrow the exception to be handled by the global exception handler
+		}
 	}
 
 	@Override
 	public List<DoctorList> getallDocScheduleBySpec(String spec, String like) {
 		/*
-		 * This method retrieves doctors' schedules based on a specific specialization
-		 * and weekday pattern from the database.
+		 * This method retrieves doctors' schedules based on a specific specialization and weekday pattern from the
+		 * database.
 		 */
-		List<DoctorList> dout = em.createQuery(
-				"select new spring.orm.model.output.DoctorList( d.doctId,d.doctName) from DoctorTemp d where (d.schedule.weekday ='ALL' or d.schedule.weekday like CONCAT('%', :like, '%')) and d.specialization.id=:spec and d.isDeleted = false ",
-				DoctorList.class).setParameter("like", like).setParameter("spec", spec).getResultList();
+		try {
+			List<DoctorList> dout = em.createQuery(
+					"select new spring.orm.model.output.DoctorList( d.doctId,d.doctName) from DoctorTemp d where (d.schedule.weekday ='ALL' or d.schedule.weekday like CONCAT('%', :like, '%')) and d.specialization.id=:spec and d.isDeleted = false ",
+					DoctorList.class).setParameter("like", like).setParameter("spec", spec).getResultList();
 
-		return dout;
+			logger.info("Retrieved {} doctors' schedules with specialization: {} and weekday pattern: {}", dout.size(),
+					spec, like);
+			return dout;
+		} catch (Exception e) {
+			logger.error("Failed to retrieve doctors' schedules with specialization: {} and weekday pattern: {}", spec,
+					like, e);
+			throw e; // Rethrow the exception to be handled by the global exception handler
+		}
 	}
 
 	@Override
 	public DoctorOutPutModel getDocById(int id) {
-
-		DoctorOutPutModel d = new DoctorOutPutModel();
-		d.setD(em.find(DoctorTemp.class, id));
-		d.setDocsche(docschedule.getSchedulebyId(d.getDoctId()));
-
-		return d;
-
+		try {
+			DoctorOutPutModel d = new DoctorOutPutModel();
+			d.setD(em.find(DoctorTemp.class, id));
+			d.setDocsche(docschedule.getSchedulebyId(d.getDoctId()));
+			logger.info("Retrieved doctor with id: {}", id);
+			return d;
+		} catch (Exception e) {
+			logger.error("Failed to retrieve doctor with id: {}", id, e);
+			throw e; // Rethrow the exception to be handled by the global exception handler
+		}
 	}
 
 	public List<DoctorOutPutModel> getallDocSchedule() {
