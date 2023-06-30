@@ -1,3 +1,13 @@
+// Show buffering layer
+function showBufferingLayer() {
+    document.getElementById('buffering-layer').style.display = 'flex';
+}
+
+// Hide buffering layer
+function hideBufferingLayer() {
+    document.getElementById('buffering-layer').style.display = 'none';
+}
+
      function onclickspec() {
 
 		$('#id').val('');
@@ -12,6 +22,8 @@
 	}
 
 	function gettest(specid) {
+			  showBufferingLayer();
+
 		$.ajax({
 			url : "./gettest",
 			method : "post",
@@ -42,7 +54,7 @@
 				$('#add-spec-btn').text('update');
 			}
 		});
-
+	hideBufferingLayer();
 	}
 
 	function deltest(specid) {
@@ -81,3 +93,5 @@
 			}
 		});
 	}
+		setTimeout(hideBufferingLayer, 3000);
+	
