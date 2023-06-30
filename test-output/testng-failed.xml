@@ -3,25 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="spring.orm.test.controller.AdminControllerTest">
+      <class name="test.java.spring.orm.controller.test.DoctorControllerTest">
         <methods>
-          <include name="AdminControllerTest"/>
-          <include name="beforeClass"/>
-          <include name="basePageTest"/>
-          <include name="beforeMethod"/>
-          <include name="afterClass"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="testDateWiseProfitDataTest"/>
-          <include name="adminReportsTest"/>
-          <include name="doctorProfitDataTest"/>
-          <include name="beforeSuite"/>
-          <include name="getSpecializationTest"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="getPatientTest"/>
+          <include name="testSaveDoctor_InvalidWeekdayException"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- spring.orm.test.controller.AdminControllerTest -->
+      </class> <!-- test.java.spring.orm.controller.test.DoctorControllerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

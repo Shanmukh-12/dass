@@ -1,435 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="2" failed="7" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-29T12:19:52 IST" name="Default suite" finished-at="2023-06-29T12:19:52 IST" duration-ms="62">
+  <suite started-at="2023-06-30T14:37:04 IST" name="Default suite" finished-at="2023-06-30T14:37:05 IST" duration-ms="636">
     <groups>
     </groups>
-    <test started-at="2023-06-29T12:19:52 IST" name="Default test" finished-at="2023-06-29T12:19:52 IST" duration-ms="62">
-      <class name="spring.orm.test.controller.AdminControllerTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeSuite" finished-at="2023-06-29T12:19:52 IST" duration-ms="8" status="PASS">
+    <test started-at="2023-06-30T14:37:04 IST" name="Default test" finished-at="2023-06-30T14:37:05 IST" duration-ms="636">
+      <class name="test.java.spring.orm.controller.test.DoctorControllerTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:04 IST" name="setUp" finished-at="2023-06-30T14:37:05 IST" duration-ms="457" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeTest" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetDoctor()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:05 IST" name="testGetDoctor" finished-at="2023-06-30T14:37:05 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeClass" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testGetDoctor -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:05 IST" name="setUp" finished-at="2023-06-30T14:37:05 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="AdminControllerTest()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="AdminControllerTest" finished-at="2023-06-29T12:19:52 IST" duration-ms="4" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Test not implemented]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Test not implemented
-at spring.orm.test.controller.AdminControllerTest.AdminControllerTest(AdminControllerTest.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetDoctorpage()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:05 IST" name="testGetDoctorpage" finished-at="2023-06-30T14:37:05 IST" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AdminControllerTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testGetDoctorpage -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:05 IST" name="setUp" finished-at="2023-06-30T14:37:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testHandleInvalidWeekdayException()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:05 IST" name="testHandleInvalidWeekdayException" finished-at="2023-06-30T14:37:05 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testHandleInvalidWeekdayException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:05 IST" name="setUp" finished-at="2023-06-30T14:37:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="adminReportsTest()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="adminReportsTest" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Test not implemented]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Test not implemented
-at spring.orm.test.controller.AdminControllerTest.adminReportsTest(AdminControllerTest.java:63)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        </test-method> <!-- setUp -->
+        <test-method signature="testSaveDoctor()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:05 IST" name="testSaveDoctor" finished-at="2023-06-30T14:37:05 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminReportsTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- testSaveDoctor -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:05 IST" name="setUp" finished-at="2023-06-30T14:37:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="basePageTest()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="basePageTest" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Test not implemented]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Test not implemented
-at spring.orm.test.controller.AdminControllerTest.basePageTest(AdminControllerTest.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        </test-method> <!-- setUp -->
+        <test-method signature="testUpdateDoctor()[pri:0, instance:test.java.spring.orm.controller.test.DoctorControllerTest@3a6f2de3]" started-at="2023-06-30T14:37:05 IST" name="testUpdateDoctor" finished-at="2023-06-30T14:37:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="doctorProfitDataTest()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="doctorProfitDataTest" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Test not implemented]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Test not implemented
-at spring.orm.test.controller.AdminControllerTest.doctorProfitDataTest(AdminControllerTest.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doctorProfitDataTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="f" data-provider="dp" finished-at="2023-06-29T12:19:52 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.Integer,java.lang.String)[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="f" data-provider="dp" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="getPatientTest()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="getPatientTest" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Test not implemented]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Test not implemented
-at spring.orm.test.controller.AdminControllerTest.getPatientTest(AdminControllerTest.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPatientTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="getSpecializationTest()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="getSpecializationTest" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Test not implemented]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Test not implemented
-at spring.orm.test.controller.AdminControllerTest.getSpecializationTest(AdminControllerTest.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSpecializationTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="testDateWiseProfitDataTest()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="testDateWiseProfitDataTest" finished-at="2023-06-29T12:19:52 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[Test not implemented]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Test not implemented
-at spring.orm.test.controller.AdminControllerTest.testDateWiseProfitDataTest(AdminControllerTest.java:88)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDateWiseProfitDataTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="beforeMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterMethod" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterClass" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterTest" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:spring.orm.test.controller.AdminControllerTest@40dff0b7]" started-at="2023-06-29T12:19:52 IST" name="afterSuite" finished-at="2023-06-29T12:19:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- spring.orm.test.controller.AdminControllerTest -->
+        </test-method> <!-- testUpdateDoctor -->
+      </class> <!-- test.java.spring.orm.controller.test.DoctorControllerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
